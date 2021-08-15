@@ -331,8 +331,10 @@
                 <div class="subscription">
                     <h3 class="conect-title">Подпишитесь на рассылку</h3>
                     <form action="" class="subscription-form">
-                        <input type="text" name="email" placeholder="E-mail">
-                        <button type="submit">Подписаться</button>
+                        <input type="text" name="email" placeholder="E-mail" class=" input subscription-input">
+                        <button type="submit" class="hero-btn subscription-btn">Подписаться<svg class="send-icon">
+                            <use href="images/icons.svg#send"></use>
+                        </svg></button>
                     </form>
                 </div>      
             </div>
@@ -347,6 +349,38 @@
                     </svg>
                     <!--<img src="./images/close.svg">-->
                 </button>
+            </div>
+            <div class="form-fild">
+            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="">
+                
+                <label for="name">Имя</label>
+                <div class="form-item">
+                <span class="icon"><svg class="form-icon">
+                    <use href="./images/icons.svg#person"></use>
+                </svg></span>
+                <input type="text" name="name" id="name">
+                </div>
+                <label for="tel">Телефон</label>
+                <div class="form-item">
+                    <span class="icon"><svg class="form-icon">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg></span>
+                <input type="tel" name="tel" id="tel">
+                </div>
+                <label for="email">Почта</label>
+                <div class="form-item">
+                    <span class="icon"><svg class="form-icon">
+                            <use href="./images/icons.svg#E-mail"></use>
+                        </svg></span>
+                <input type="email" name="email" id="email">
+                </div>
+                <label for="coment">Комментарий</label>
+                <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                <input type="checkbox" name="policy" id="policy" class="input-checkbox">
+                <label for="policy" class="policy-label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                <button type="submit" class="hero-btn btn-modal">Отправить</button>
+            </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
